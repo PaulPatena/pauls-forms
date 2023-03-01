@@ -1,0 +1,51 @@
+@import "../config";
+
+.pauls-form {
+  .error {
+    color: $system-red;
+    font-size: $font-size-sm;
+  }
+
+  .error-summary-container {
+    border-radius: 0.25rem;
+    border: 1px solid $system-red;
+    background-color: $chalk-pink;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .field-container {
+    margin-bottom: 0.5rem;
+    //border: 1px solid pink;
+  }
+
+  .checkbox-container {
+    display: flex;
+    align-items: center;
+  }
+
+  input[type="checkbox"] {
+    display: inline-block;
+  }
+
+  label {
+    font-size: $font-size-md;
+    font-weight: normal;
+  }
+
+  %common {
+    display: flex;
+    padding: 0.25rem 0.5rem;
+    font-size: $font-size-lg;
+  }
+
+  input {
+    @extend %common;
+    height: 1.5rem;
+  }
+
+  select {
+    @extend %common;
+    height: 2rem;
+  }
+}
